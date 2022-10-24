@@ -10,7 +10,9 @@ def peluche(request):
     return render(request,'templatesApp/productos.html',data)
 
 def figura(request):
-    data={"titulo":"Figuras","imag1":"","imag2":"","imag3":"","prod1":"","prod2":"","prod3":""}
+    data={"titulo":"Figuras","imag1":"https://kawaii-panda.com/19164/mini-figura-sanrio-characters-paint-gashapon.jpg",
+          "imag2":"https://kawaii-panda.com/20290/sanrio-characters-cord-keeper-series-5-gashapon.jpg",
+          "imag3":"https://tecnologiamaterson.cl/wp-content/uploads/2022/08/TWERRR-3.jpg","prod1":"Gashapon 1","prod2":"Gashapon 2","prod3":"Gashapon 3"}
     return render(request,'templatesApp/productos.html',data)
 
 def accesorio(request):
