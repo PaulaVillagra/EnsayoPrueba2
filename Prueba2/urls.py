@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from firstApp.views import index
+from firstApp.views import index,peluche
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/',index),
+    path('peluches/',peluche)
 ]
