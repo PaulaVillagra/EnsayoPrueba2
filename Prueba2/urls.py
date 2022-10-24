@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from firstApp.views import index,peluche
+from firstApp.views import index,peluche,figura,accesorio
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/',index),
-    path('peluches/',peluche)
+    path('',index),
+    path('peluches/',peluche),
+    path('figuras/',figura),
+    path('accesorios/',accesorio),
 ]
